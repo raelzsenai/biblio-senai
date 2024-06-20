@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="box-login">
+        <main>
+            <form action="Insercao.php" method="POST"> <!-- Formulário com método POST para enviar dados para Insercao.php -->
+                <img src="imagens/login.png" alt="Logo"> <!-- Imagem dentro do formulário -->
+                <div id="label-form"><label for="nome">E-mail:</label> <!-- Rótulo para o campo de entrada 'nome' -->
+                <input type="email" id="email" name="email" required></div> <!-- Campo de entrada para inserir o nome -->
+                <div id="label-form"><label for="email">Senha:</label> <!-- Rótulo para o campo de entrada 'email' -->
+                <input type="password" name="senha" id="senha" required></div> <!-- Campo de entrada para inserir o e-mail -->
+                <button type="submit">Entrar</button> <!-- Botão para enviar o formulário -->
+                <br> <!-- Quebra de linha para separar visualmente o botão do link 'Esqueci a senha' -->
+                <a href="recuperar_senha.php">Esqueci a senha</a> <!-- Link para recuperar a senha -->
+            </form>
+        </main>
+    </div>
+</body>
+</html>

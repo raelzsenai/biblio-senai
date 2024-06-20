@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte para o corpo do documento */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background-color: #ffffff; /* Define a cor de fundo para o corpo do documento */
+}
+main {
+    padding: 2rem; /* Adiciona um preenchimento interno de 2rem ao redor do conteúdo principal */
+    text-align: center; /* Centraliza o conteúdo dentro da área principal */
+}
+
+form {
+    background-color: rgb(193, 193, 193); /* Define a cor de fundo do formulário */
+    padding: 2rem; /* Adiciona um preenchimento interno de 2rem ao redor do formulário */
+    border-style: 8px; /* Define um raio de borda de 8px para o formulário */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do formulário */
+    max-width: 300px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente na página */
+    text-align: center; /* Centraliza o conteúdo do formulário */
+}
+
+form img {
+    display: block; /* Define a imagem como um elemento de bloco para centralizá-la */
+    margin: 0 auto 1rem; /* Centraliza a imagem horizontalmente e adiciona uma margem abaixo de 1rem */
+    max-width: 100px; /* Define a largura máxima da imagem como 100px */
+    height: auto; /* Mantém a proporção da altura automaticamente */
+}
+
+label {
+    display: block; /* Define os rótulos como elementos de bloco para colocá-los em linhas separadas */
+    margin-bottom: 0.5rem; /* Adiciona uma margem inferior de 0.5rem para separar os rótulos dos campos de entrada */
+    text-align: left; /* Alinha os rótulos à esquerda */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; /* Define a largura dos campos de texto e email como 100% do contêiner pai */
+    padding: 0.5rem; /* Adiciona preenchimento interno de 0.5rem nos campos de entrada */
+    margin-bottom: 1rem; /* Adiciona uma margem inferior de 1rem para separar os campos de entrada */
+    border: 1px solid #ccc; /* Define uma borda de 1px sólida com cor #ccc nos campos de entrada */
+    border-radius: 4px; /* Define um raio de borda arredondado de 4px para os campos de entrada */
+}
+
+button {
+    background-color: #966b4a; /* Define a cor de fundo do botão como marrom escuro pastel */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda do botão */
+    padding: 0.5rem 1rem; /* Adiciona preenchimento interno de 0.5rem na vertical e 1rem na horizontal */
+    cursor: pointer; /* Altera o cursor para um ponteiro quando passar sobre o botão */
+    border-radius: 4px; /* Define um raio de borda arredondado de 4px para o botão */
+}
+
+button:hover {
+    background-color: #7c563a; /* Altera a cor de fundo do botão para um tom mais escuro ao passar o mouse */
+}

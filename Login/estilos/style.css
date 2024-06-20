@@ -1,0 +1,60 @@
+@charset "UTF-8"; /* Define o conjunto de caracteres UTF-8 para garantir que o arquivo CSS seja interpretado corretamente */
+
+body, html {
+    height: 100%; /* Define a altura do body e do html como 100% da altura da janela */
+    margin: 0; /* Remove todas as margens padrão do body e do html */
+    display: flex; /* Usa o modelo de layout flexbox */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define as fontes para o corpo do documento */
+}
+
+main {
+    display: flex; /* Usa o modelo de layout flexbox */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    background-color: #DDDDDD; /* Define a cor de fundo */
+    width: 20em; /* Define a largura do elemento*/
+    height: 25em; /* Define a altura do elemento*/
+    border-radius: 1em; /* Define um raio de borda arredondado*/
+    margin: auto; /* Centraliza o elemento horizontalmente usando margens automáticas */
+}
+
+form {
+    display: flex; /* Usa o modelo de layout flexbox */
+    flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+#label-form {
+    display: flex; /* Usa o modelo de layout flexbox */
+    align-items: flex-start; /* Alinha os itens filhos para o início do eixo vertical */
+    flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+}
+
+input[type="password"], 
+input[type="email"] {
+    width:18em; /* Define a largura dos campos de texto e email */
+    padding: 0.5rem; /* Adiciona preenchimento interno nos campos de entrada */
+    margin-bottom: 1rem; /* Adiciona uma margem inferior para separar os campos de entrada */
+    border: 1px solid #ccc; /* Define uma borda nos campos de entrada */
+    border-radius: 4px; /* Define um raio de borda arredondado para os campos de entrada */
+}
+
+button {
+    background-color: #E99D50; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0.5rem 1rem; /* Adiciona preenchimento interno na vertical e na horizontal */
+    cursor: pointer; /* Altera o cursor para um ponteiro quando passar sobre o botão */
+    border-radius: 4px; /* Define um raio de borda arredondado de 4px para o botão */
+}
+
+button:hover {
+    background-color: #7c563a; /* Altera a cor de fundo do botão*/
+}
+
+a {
+    color: black; /* Define a cor do texto*/
+}

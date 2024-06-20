@@ -1,0 +1,49 @@
+body { /*mudar a página o e formulario*/
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+  }
+  
+  form { /*Mudar o formulário*/
+    width: 400px;
+    background: #dddddd;
+    padding: 20px;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  }
+  
+  label { /*mudar legenda do formulário (nome, email, senha, confirmar senha)*/
+    font-weight: bold;
+  }
+  
+  input[type="text"], /*definir a forma do input do formulário*/
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 20px); /*definir o tamanho do input*/
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-top: 2px;
+  }
+  
+  button[type="submit"] { /*formato do botão de cadastrar*/
+    background-color: #E99D50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button[type="submit"]:hover { /*quando passar o mouse mudar a cor*/
+    background-color: #c28343;
+  }
