@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="HomeCSS.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="Imagem/LogoFeia2.png" alt="Logo" class="logo"> <!-- Aqui coloca a imagem do logo com a classe 'logo' -->
+    <a href="" class="botao">👤</a> <!-- Aqui cria um link com um ícone de usuário e a classe 'botao' -->
+    <header>
+        <h1 style="color: #333; font-size: 80px; margin-bottom: 0;"><b>BookNest</b></h1> <!-- Aqui cria o cabeçalho com o título do site -->
+    </header>
+    <nav> <!-- Aqui cria a nav-->
+        <ul> <!-- Aqui cria a ista de itens a nav-->
+            <li><a href="Home.html">Home</a></li> <!-- Aqui cria o link para a página Home -->
+            <li><a href="TodosLivros.html">Livros</a></li> <!-- Aqui cria o link para a página Todos Livros -->
+            <li><a href="Sobreautor.html">Sobre</a></li> <!-- Aqui cria o link para a página Sobre  -->
+        </ul>
+    </nav> 
+    <br> 
+    <div class="search-container"> <!-- Aqui cria uma div do container da barra de pesquisa -->
+        <input type="text" id="searchInput" placeholder="Pesquise por livros ou autores..."> <!-- Aqui cria o campo de entrada para pesquisa -->
+        <button onclick="searchBooks()">Pesquisar</button> <!-- Aqui cria o botão de pesquisa que chama a função 'searchBooks' ao ser clicado -->
+    </div>
+    <br>
+    <div class="frase"><b>SUGESTÃO PARA VOCÊ</b></div> <!-- Aqui cria div com class que dá inicio a uma sessão para o usuário -->
+    <div class="polaroids-container"> <!-- Aqui cria o container para as imagens dos livros em estilo polaroid -->
+        <div class="polaroid"> <!-- Aqui cria um item polaroid -->
+            <img src="Imagem/LivroBridgerton2.jpg" alt="Imagem 1"> <!-- Aqui coloca a imagem do livro -->
+            <p>Bridgerton: O Visconde que me Amava</p> <!-- Aquicoloca o título do livro -->
+            <p>Julia Quinn</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <a href="SobreLivroHarryPotter1.html"> <!-- Aqui cria um link para a página de detalhes do livro -->
+                <img src="Imagem/LivroHarryPotter.jpg" alt="Imagem 2"> <!-- Aqui coloca a imagem do livro -->
+            </a>
+            <p>Harry Potter e a Pedra Filosofal</p> <!-- Aquicoloca o título do livro -->
+            <p>J. K. Rowling</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroACulpaDasEsrelas.jpg" alt="Imagem 3"> <!-- Aqui coloca a imagem do livro -->
+            <p>A Culpa é das Estrelas</p> <!-- Aquicoloca o título do livro -->
+            <p>John Green</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroPequenoPrincipe.jpg" alt="Imagem 4"> <!-- Aqui coloca a imagem do livro -->
+            <p>O Pequeno Príncipe</p> <!-- Aquicoloca o título do livro -->
+            <p>Antoine de Saint-Exupéry</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+    </div>
+
+    <div class="frase"><b>DESTAQUE DO MÊS</b></div>  <!-- Aqui cria div com class que dá inicio a uma sessão para o usuário -->
+    <div class="polaroids-container">
+        <div class="polaroid">
+            <img src="Imagem/LivroFalarSobreKevin.jpg" alt="Imagem 1"> <!-- Aqui coloca a imagem do livro -->
+            <p>Precisamos falar sobre o Kevin</p> <!-- Aquicoloca o título do livro -->
+            <p>Lionel Shriver</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroHeartstopper.jpg" alt="Imagem 2"> <!-- Aqui coloca a imagem do livro -->
+            <p>Heartstopper</p> <!-- Aquicoloca o título do livro -->
+            <p>Alice Oseman</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroGarotaLago.jpg" alt="Imagem 3"> <!-- Aqui coloca a imagem do livro -->
+            <p>A Garota do Lago</p> <!-- Aquicoloca o título do livro -->
+            <p>Charlie Donlea</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroCorteEEspinhos.jpg" alt="Imagem 4"> <!-- Aqui coloca a imagem do livro -->
+            <p>Corte de Espinhos e Rosas</p>  <!-- Aquicoloca o título do livro -->
+            <p>Sarah J. Maas</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+    </div>
+
+    <div class="frase"><b>MAIS ADQUIRIDOS</b></div> <!-- Aqui cria div com class que dá inicio a uma sessão para o usuário -->
+    <div class="polaroids-container">
+        <div class="polaroid">
+            <img src="Imagem/LivroHarryPotter7.jpg" alt="Imagem 1"> <!-- Aqui coloca a imagem do livro -->
+            <p>Harry Potter e as Relíquias da Morte</p> <!-- Aquicoloca o título do livro -->
+            <p>J. K. Rowling</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroRainhaGambito.jpg" alt="Imagem 2"> <!-- Aqui coloca a imagem do livro -->
+            <p>O Gambito da Rainha</p> <!-- Aquicoloca o título do livro -->
+            <p>Walter Tevis</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroBarracaBeijo.jpg" alt="Imagem 3"> <!-- Aqui coloca a imagem do livro -->
+            <p>A Barraca do Beijo</p> <!-- Aquicoloca o título do livro -->
+            <p>Beth Reekles</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroDiarioBanana.jpg" alt="Imagem 4"> <!-- Aqui coloca a imagem do livro -->
+            <p>Diário de uma Banana</p> <!-- Aquicoloca o título do livro -->
+            <p>Jeff Kinney</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+    </div>
+
+    <br> <!-- Linha em branco para espaçamento -->
+    <script src="HomeJS.js"></script> <!-- Link para o arquivo JavaScript -->
+</body> <!-- Fim do corpo do documento -->
+</html> <!-- Fim do documento HTML -->

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TodosLivrosCSS.css">
+    <title>Livros</title>
+</head>
+<body>
+    <img src="Imagem/LogoFeia2.png" alt="Logo" class="logo">
+    <a href="" class="botao">👤</a>
+    <header>
+        <h1 style="color: #333; font-size: 80px; margin-bottom: 0;"><b>BookNest - Livros</b></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li> <!-- Aqui cria o link para a página Home -->
+            <li><a href="TodosLivros.html">Livros</a></li> <!-- Aqui cria o link para a página Todos Livros -->
+            <li><a href="Sobreautor.html">Sobre</a></li> <!-- Aqui cria o link para a página Sobre  -->
+        </ul>
+    </nav>
+    <br>
+    <div class="search-container"> <!-- Aqui cria uma div do container da barra de pesquisa -->
+        <input type="text" id="searchInput" placeholder="Pesquise por livros ou autores...">   <!-- Aqui cria o campo de entrada para pesquisa -->
+        <button onclick="searchBooks()">Pesquisar</button> <!-- Aqui cria o botão de pesquisa que chama a função 'searchBooks' ao ser clicado -->
+    </div>
+    <br>
+    <h2 class="section-title">Romance</h2> 
+    <div class="polaroids-container"> <!-- Aqui cria div com class que dá inicio a uma sessão para o usuário -->
+        <div class="polaroid">
+            <img src="Imagem/LivroHipoteseAmor.jpg" alt="Imagem 1"> <!-- Aqui coloca a imagem do livro -->
+            <p>A Hipótese do Amor</p><!-- Aquicoloca o título do livro -->
+            <p>Ali Hazelwood</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroDepoisDesseTempo.jpg" alt="Imagem 2"> <!-- Aqui coloca a imagem do livro -->
+            <p>Todo esse Tempo</p> <!-- Aquicoloca o título do livro -->
+            <p>Rachel Lippincott</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroSelecao.jpg" alt="Imagem 3"> <!-- Aqui coloca a imagem do livro -->
+            <p>A Seleção</p> <!-- Aquicoloca o título do livro -->
+            <p>Kiera Cass</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroDepoisDeVoce.jpg" alt="Imagem 4"> <!-- Aqui coloca a imagem do livro -->
+            <p>Como eu era antes de você</p> <!-- Aquicoloca o título do livro -->
+            <p>Jojo Moyes</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+      </div>
+    <br>
+    <br>
+    <h2 class="section-title">Suspense</h2>
+    <div class="polaroids-container">
+        <div class="polaroid">
+            <img src="Imagem/LivroPacienteSilenciosa.jpg" alt="Imagem 1"> <!-- Aqui coloca a imagem do livro -->
+            <p>A Paciente Silenciosa</p> <!-- Aquicoloca o título do livro -->
+            <p>Alex Michaelides</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroEstaMentindo.jpg" alt="Imagem 2"> <!-- Aqui coloca a imagem do livro -->
+            <p>Um de nós está mentindo</p> <!-- Aquicoloca o título do livro -->
+            <p>Karen M. McManus</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroOPaciente.jpg" alt="Imagem 3"> <!-- Aqui coloca a imagem do livro -->
+            <p>O Paciente</p> <!-- Aquicoloca o título do livro -->
+            <p>Jaspes DeWitt</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroAmigoImaginario.jpg" alt="Imagem 4"> <!-- Aqui coloca a imagem do livro -->
+            <p>Amigo Imaginário</p> <!-- Aquicoloca o título do livro -->
+            <p>Stephen Chbosky</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <h2 class="section-title">Fantasia</h2>
+      <div class="polaroids-container">
+        <div class="polaroid">
+            <img src="Imagem/LivroPrincesaCinzas.jpg" alt="Imagem 1"> <!-- Aqui coloca a imagem do livro -->
+            <p>Princesa das Cinzas</p> <!-- Aquicoloca o título do livro -->
+            <p>Laura Sebastian</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid"> 
+            <img src="Imagem/LivroCronicas.jpg" alt="Imagem 2"> <!-- Aqui coloca a imagem do livro -->
+            <p>Cronicas de Nária</p> <!-- Aquicoloca o título do livro -->
+            <p>C. S. Lewis</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroCinderelaMorta.jpg" alt="Imagem 3"> <!-- Aqui coloca a imagem do livro -->
+            <p>Cinderela está Morta</p> <!-- Aquicoloca o título do livro -->
+            <p>Kalynn Bayron</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+        <div class="polaroid">
+            <img src="Imagem/LivroHerança.jpg" alt="Imagem 4"> <!-- Aqui coloca a imagem do livro -->
+            <p>Herança</p> <!-- Aquicoloca o título do livro -->
+            <p>Christopher Paolini</p> <!-- Aqui coloca o autor do livro -->
+        </div>
+      </div>
+
+      <br>
+
+      <script src="TodosLivrosJS.js"></script>
+</body>
+</html>
