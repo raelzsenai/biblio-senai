@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aqui define a fonte para o corpo da página */
+    line-height: 1.6; /* Aqui define a altura da linha */
+    background-color: #f4f4f4; /* Aqui define a cor do fudo da página */
+    margin: 0; /* Aqui remove a margem padrão do corpo da página*/
+}
+
+header {
+    text-align: center; /* Aqui centraliza o texto no cabeçalho */
+    padding: 1rem 0; /* Aqui adiciona um preenchimento de 1 rem no topo e embaixo do cabeçalho */
+    background-color: #f4f4f4; /* Aqui define a cor do fudo */
+}
+
+nav {
+    background-color: #eae0d5;  /* Aqui define a cor do fudo da barra de navegação */
+    color: #333; /* Aqui define a cor do texto na barra de navegação */
+    padding: 0.5rem 0; /* Aqui adiciona um preenchimento de 0.5 rem no topo e embaixo da navegação */
+    text-align: center; /* Aqui centraliza o texto dentro da navegação */
+    z-index: 999; /* Aqui define a ordem de empilhamento para garantir que a navegação fique no topo de outros elementos */
+}
+
+nav ul {
+    list-style-type: none; /* Aqui remove os marcadores da lista */
+    padding: 0; /* Aqui remove o preenchimento da lista */
+    margin: 0; /* Aqui remove a margem da lista */
+}
+
+nav ul li {
+    display: inline; /* Aqui exibe os itens da lista na mesma linha */
+    margin-right: 1rem; /* Aqui adiciona uma margem à direita de cada item da lista */
+}
+
+nav ul li a {
+    color: #333; /* Aqui define a cor do texto dos links */
+    text-decoration: none; /* Aqui remove a decoração de texto dos links */
+    font-size: 1.5em; /* Aqui define o tamanho da fonte dos links */
+    transition: background-color 0.3s; /* Aqui adiciona uma transição suave na cor de fundo dos links */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Aqui define a cor de fundo do hover*/
+    padding: 0.2rem 0.4rem; /* Aqui adiciona um preenchimento ao redor dos links ao passar o mouse */
+    border-radius: 5px; /* Aqui adiciona um borda arredondada aos links ao passar o mouse */
+}
+
+.polaroids-container {
+    display: flex; /* Aqui define a exibição dos itens como flexível */
+    justify-content: center; /* Aqui centraliza os itens dentro do container */
+    margin-top: 20px; /* Aqui adiciona uma margem superior ao container */
+}
+
+.polaroid {
+    width: 200px; /* Aqui define a largura de cada polaroid */
+    padding: 10px; /* Aqui adiciona um preenchimento dentro de cada polaroid */
+    margin: 0 30px; /* Aqui adiciona uma margem lateral de 30px entre as polaroids */
+    background: #f9f9f9; /* Aqui define a cor do funfo do polaroids*/
+    border: 1px solid #ddd; /* Aqui adiciona uma borda cinza clara às polaroids */
+    border-radius: 5px; /* Aqui adiciona bordas arredondadas às polaroids */
+    transition: transform 0.3s ease-in-out; /* Aqui adiciona uma transição suave na transformação das polaroids */
+}
+
+.polaroid p {
+    color: black; /* Aqui define a cor do texto dentro das polaroids */
+    font-weight: bold; /* Aqui define o peso da fonte do texto dentro das polaroids */
+}
+
+.polaroid:hover {
+    transform: scale(1.1); /* Aqui aumenta a escala das polaroids em 10% ao passar o mouse */
+}
+
+.polaroid img {
+    width: 100%; /* Aqui define a largura das imagens para ocupar todo o espaço da polaroid */
+    height: 200px; /* Aqui define a altura das imagens */
+    object-fit: cover; /* Aqui garante que a imagem cubra toda a área da polaroid */
+    border-radius: 5px; /* Aqui adiciona bordas arredondadas às imagens */
+}
+
+.frase {
+    text-align: center; /* Aqui centraliza o texto */
+    color: #636262; /* Aqui define a cor do texto */
+    font-size: 21px; /* Aqui define o tamanho da fonte */
+    margin-top: 20px; /* Aqui adiciona uma margem superior */
+    font-weight: bold; /* Aqui define o peso da fonte */
+}
+
+.frase2 {
+    text-align: center; /* Aqui centraliza o texto */
+    color: #636262; /* Aqui define a cor do texto */
+    font-size: 25px; /* Aqui define o tamanho da fonte */
+    margin-top: 20px; /* Aqui adiciona uma margem superior */
+    font-weight: bold; /* Aqui define o peso da fonte */
+}
+
+.botao {
+    position: absolute; /* Aqui define a posição do botão como absoluta */
+    top: 5px; /* Aqui define a distância do botão do topo */
+    right: 60px; /* Aqui define a distância do botão da direita */
+    width: 50px; /* Aqui define a largura do botão */
+    height: 50px; /* Aqui define a altura do botão */
+    border-radius: 50%; /* Aqui adiciona bordas arredondadas para criar um botão circular */
+    background-color: #333;  /* Aqui define a cor do funfo do botão*/
+    color: #333; /* AQui define a cor do texto do botão (aparentemente, esta cor se mistura com o fundo) */
+    text-align: center; /* Aqui centraliza o texto dentro do botão */
+    line-height: 50px; /* Aqui define a altura da linha para centralizar verticalmente o texto */
+    font-size: 20px; /* Aqui define o tamanho da fonte do botão */
+    cursor: pointer; /* Aqui altera o cursor para um ponteiro ao passar sobre o botão */
+    z-index: 1000; /* Aqui define a ordem de empilhamento do botão para garantir que ele fique no topo */
+}
+
+.logo {
+    position: absolute; /* Aqui define a posição da logo como absoluta */
+    top: 10px; /* Aqui define a distância da logo do topo */
+    left: 10px; /* Aqui define a distância da logo da esquerda */
+    width: 60px; /* Aqui define a largura da logo */
+    height: 60px; /* Aqui define a altura da logo */
+    border-radius: 50%; /* Aqui adiciona bordas arredondadas para criar uma logo circular */
+    object-fit: cover; /* Aqui garante que a imagem da logo cubra toda a área definida */
+}
+
+.search-container {
+    text-align: center; /* Aqui centraliza o conteúdo do contêiner de pesquisa */
+    margin-bottom: 20px; /* Aqui adiciona uma margem inferior ao contêiner de pesquisa */
+}
+
+#searchInput {
+    width: 40%; /* Aqui define a largura do campo de entrada de pesquisa */
+    padding: 10px; /* Aqui adiciona um preenchimento dentro do campo de entrada */
+    font-size: 1em; /* Aqui define o tamanho da fonte do campo de entrada */
+    border: 1px solid #ddd; /* Aqui adiciona uma borda cinza clara ao campo de entrada */
+    border-radius: 5px; /* Aqui adiciona bordas arredondadas ao campo de entrada */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1); /* Aqui adiciona uma sombra leve ao campo de entrada */
+    transition: all 0.3s ease-in-out; /* Aqui adiciona uma transição suave para todas as propriedades */
+}
+
+#searchInput:focus {
+    outline: none; /* Aqui remove o contorno padrão ao focar no campo de entrada */
+    border-color: #aaa; /* Aqui altera a cor da borda ao focar no campo de entrada */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* Aqui aumenta a sombra ao focar no campo de entrada */
+}
+
+button {
+    padding: 10px 20px; /* Aqui adiciona preenchimento ao botão */
+    font-size: 1em; /* Aqui define o tamanho da fonte do botão */
+    border: none; /* Aqui remove a borda padrão do botão */
+    border-radius: 5px; /* Aqui adiciona bordas arredondadas ao botão */
+    background-color: #333; /* Aqui define a cor de fundo do botão */
+    color: white; /* Aqui define a cor do texto do botão */
+    cursor: pointer; /* Aqui altera o cursor para um ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s ease-in-out; /* Aqui adiciona uma transição suave para a cor de fundo do botão */
+    margin-left: 10px; /* Aqui adiciona uma margem à esquerda do botão */
+}
+
+button:hover {
+    background-color: #555; /* Aqui altera a cor de fundo do botão ao passar o mouse */
+}
+
+#sobre{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 500px;
+    margin-right: 500Px;
+    margin-top: 50px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: 90px;
+}

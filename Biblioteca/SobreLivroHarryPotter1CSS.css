@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #eae0d5;
+    color: #333;
+    padding: 0.5rem 0;
+    text-align: center;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+}
+.container-baixo {
+background-color: #decdbf86;
+border-radius: 15px;
+padding: 30px;
+margin-top: 20px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+display: flex;
+align-items: center;
+}
+
+#imagem-lateral {
+max-width: 800px;
+max-height: 800px;
+height: auto;
+margin-right: 20px;
+}
+
+.informacoes-quarto {
+flex: 1;
+}
+
+.botao-reserva {
+display: block;
+width: 200px;
+margin: 0 auto;
+text-align: center;
+background-color: #8B5A2B;
+color: #ffffff;
+padding: 10px;
+border-radius: 5px;
+text-decoration: none;
+}
+
+.faixaconteiner {
+display: flex;
+justify-content: space-around;
+background-color: #DECDBF;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.botao {
+position: absolute;
+top: 5px;
+right: 60px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #333;
+color: #333;;
+text-align: center;
+line-height: 50px;
+font-size: 20px;
+cursor: pointer;
+z-index: 1000;
+}
+
+.Harry1 {
+max-width: 50%;
+height: 500px;
+margin-right: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
