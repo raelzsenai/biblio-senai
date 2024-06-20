@@ -34,7 +34,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($senha === $row['senha']) {
             echo "Login realizado com sucesso!";
             // Redirecionar para a página de usuário ou dashboard
-            // header("Location: dashboard.php");
+
+            // header("Location: dashboard.php"); <- REMOVER O COMENTARIO E ADIOCINAR ESSA PARTE NO CODIGO DEPOIS
+
+            $_SESSION['idUser'] = $row['idUser'];
+            $_SESSION['nome'] = $row['nome'];
+            $_SESSION['email'] = $row['email'];
         } else {
             echo "Senha incorreta.";
         }
