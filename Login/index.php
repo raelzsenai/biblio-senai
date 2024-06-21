@@ -37,6 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // header("Location: dashboard.php"); <- REMOVER O COMENTARIO E ADIOCINAR ESSA PARTE NO CODIGO DEPOIS
 
+            session_start();
+
             $_SESSION['idUser'] = $row['idUser'];
             $_SESSION['nome'] = $row['nome'];
             $_SESSION['email'] = $row['email'];
@@ -51,3 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+
+
+
+

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Aqui define a fonte para o corpo da página */
     line-height: 1.6; /* Aqui define a altura da linha */
