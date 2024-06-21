@@ -27,15 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verificar a senha
         $row = $result->fetch_assoc();
 
-        // Debugging: Exibir a senha armazenada no banco de dados e a senha recebida
-        var_dump($senha);
-        var_dump($row['senha']);
-
         if ($senha === $row['senha']) {
             echo "Login realizado com sucesso!";
             // Redirecionar para a página de usuário ou dashboard
 
-            // header("Location: dashboard.php"); <- REMOVER O COMENTARIO E ADIOCINAR ESSA PARTE NO CODIGO DEPOIS
+            header("Location: ../Biblioteca/Home.html"); 
 
             session_start();
 
@@ -53,7 +49,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
-
 
 
 
